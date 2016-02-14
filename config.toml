@@ -2,3 +2,6 @@ baseurl = "http://poorimpulse.co"
 languageCode = "en-us"
 title = "Poor Impulse Control"
 theme = "hyde-x-pic"
+
+[params]
+  theme = "theme-base-08"
