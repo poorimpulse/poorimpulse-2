@@ -1,7 +1,16 @@
 baseurl = "http://poorimpulse.co"
 languageCode = "en-us"
 title = "Poor Impulse Control"
-theme = "hyde-x-pic"
+theme = "pic"
+
+[permalinks]
+  podcast = ":section/:slug"
+
+[taxonomies]
+  season = "seasons"
+
+[author]
+  name = "Russell Hay"
 
 [params]
   theme = "theme-base-08"

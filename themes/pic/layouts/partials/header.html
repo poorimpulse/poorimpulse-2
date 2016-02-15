@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+	<nav>
+		<header>{{ partial "logo.svg" }}</header>
+		<ul class="nav">
+			<!-- Loop through to create nav items -->
+	      {{ range .Site.Menus.main }}
+      	  <li class="nav-item">{{ .Pre }}<a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          {{end}}
+          {{ range .Site.Data.seasons }}
+          <li class="nav-item">{{ .short_name }}: <a href="{{ .url | absURL }}">{{ .name }}</a></li>
+          {{end}}
+		</ul>
+		<!-- bottom nav buttons -->
+		<ul class="bottom-nav">
+		  <li class="nav-item"><a href="">{{ partial "rss.svg" }}</a></li>
+		  <li class="nav-item"><a href="">{{ partial "apple.svg" }}</a></li>
+		  <li class="nav-item"><a href="">{{ partial "cash.svg" }}</a></li>
+		  <li class="nav-item"><a href="">{{ partial "patreon.svg" }}</a></li>
+		</ul>
+
+
+	</nav>
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<label for="nav-trigger"></label>
+	<div class="site-wrap">
