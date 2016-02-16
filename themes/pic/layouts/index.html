@@ -1,3 +1,13 @@
 {{ partial "header.html" . }}
-<h1>Welcome</h1>
+<section class="posts">
+{{ $paginator := .Paginate (where .Data.Pages "Type" "podcast") }}
+{{ range $idx, $post := $paginator.Pages }}
+  {{ if eq $idx 0 }}
+    {{ .Render "li" }}
+  {{ else }}
+    {{ .Render "summary" }}
+  {{ end }}
+{{ end }}
+{{ template "_internal/pagination.html" . }}
+</section>
 {{ partial "footer.html" . }}

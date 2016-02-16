@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>{{ .Title }}</title>
 	<link rel="stylesheet" href="/css/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<nav>
-		<header>{{ partial "logo.svg" }}</header>
+		<header>{{ partial "svgs/logo.svg" }}</header>
 		<ul class="nav">
 			<!-- Loop through to create nav items -->
 	      {{ range .Site.Menus.main }}
@@ -18,10 +19,10 @@
 		</ul>
 		<!-- bottom nav buttons -->
 		<ul class="bottom-nav">
-		  <li class="nav-item"><a href="">{{ partial "rss.svg" }}</a></li>
-		  <li class="nav-item"><a href="">{{ partial "apple.svg" }}</a></li>
-		  <li class="nav-item"><a href="">{{ partial "cash.svg" }}</a></li>
-		  <li class="nav-item"><a href="">{{ partial "patreon.svg" }}</a></li>
+		  <li class="nav-item"><a href="">{{ partial "svgs/rss.svg" }}</a></li>
+		  <li class="nav-item"><a href="">{{ partial "svgs/apple.svg" }}</a></li>
+		  <li class="nav-item"><a href="">{{ partial "svgs/cash.svg" }}</a></li>
+		  <li class="nav-item"><a href="">{{ partial "svgs/patreon.svg" }}</a></li>
 		</ul>
 
 
@@ -29,3 +30,5 @@
 	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 	<label for="nav-trigger"></label>
 	<div class="site-wrap">
+	<header><h1>Poor Impulse Control</h1></header>
+	<section>
