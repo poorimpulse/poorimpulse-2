@@ -1,8 +1,8 @@
 <article class="post">
 <header>
-	<h1><aside>{{ delimit .Params.seasons ", " ", and " }} ep{{ if eq (len .Title) 1 }}0{{end}}{{ .Title }}</aside><a href="{{ .Permalink | absURL }}">{{ .Params.episode_title }}</a></h1>
+	<h1><aside>{{ delimit .Params.seasons ", " ", and " }} ep{{ if eq (len .Title) 1 }}0{{end}}{{ .Title }}</aside><a href="{{ .Permalink }}">{{ .Params.episode_title }}</a></h1>
 	<div class="show-notes"><p>{{ .Summary }}
-	<span class="read-more"><a href="{{ .Permalink | absURL }}">more &rarr;</a></span></p>
+	<span class="read-more"><a href="{{ .Permalink }}">more &rarr;</a></span></p>
 	</div>
 </header>
 </article>
