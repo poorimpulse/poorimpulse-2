@@ -5,9 +5,13 @@
 	{{ .Render "summary" }}
 {{ end }}
 </section>
-{{ if gt 0 (len (where .Data.Pages "Type" "character")) }}
+{{ if lt 0 (len (where .Data.Pages "Type" "character")) }}
 <section class="characterList">
 <header><h1>Characters</h1></header>
+<ul>
+{{ range (where .Data.Pages "Type" "character") }}
+<li class="roundPortrait"><a href="{{ .URL | absURL }}"><img src="{{ .Params.portrait }}" width="{{ .Site.Params.circle_portrait_size}}px" height="{{ .Site.Params.circle_portrait_size}}px"></a></li>
+{{ end }}
 </section>
 {{ end }}
 <section class="episodeList">
