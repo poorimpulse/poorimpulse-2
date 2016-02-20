@@ -1,5 +1,16 @@
 language: go
 go:
-- 'tip'
+- tip
 install: go get -v github.com/spf13/hugo
 script: hugo
+deploy:
+  provider: s3
+  access_key_id: AKIAJ4EQSVXTQ7IK6DFA
+  secret_access_key:
+    secure: lyC9LDciGW4Id7mVTmkR0/Hec5YwgzsCzJxvUp9b0JEw3A1AbCPDH1nmXXPMgH02DNF2fQ1poWchUvczh5oeY/KEDqMJ7ujBC9YLClYDlDVNL71oIuZ7LPlFUG55YqTQGdfjyV+2YUBqo8KmSCv1DzB42nFY7TIcq7FRB/lCOILSkC3bv2rGmix6nMFZAwfcMRtat+CwiLAEMDhqTPBvU2XtaZCswqYDOAAEjmXge149ioJK5wx3soYyPoNiUdwhQ8OOPYs/lH7AeLnS/IvvgkjFhA4itEIPd0O/g2mTzH9Xd/49STExGhwTSdm1WTMqZ00zFSZaoM6oN0OglhVWPsjDoL+C2hU6r2XnG38JPDfE7zgXbuNPEDGl0qia2VXxJjaZjss+iQHO4PZBAp8BBcuz1Y4RLVGU41DumpNqZwQCqZesa5BNOT6AjRUFnRFe3WlCJlqIkKPa+J5uFxWlOQWKxAqV+ab4Y9LArBPXFUvkobdM8U8FRCNnaROCyhYNqqAOKEIXGcWjoqusiQDfnPAimVOytTWlk8H5g2DINR5+9m1Uj2OqVOdX4WlIYDPMDWJ6mXc2WVTteNWhS+vFkepiZIgBQByGtSIjQLhwQdRMVCxEbrt1b6WT9Jz6KJDBj6DTacZyhtJcFfhbpCca1MuKLSRAQ1ink3muTT/sFoo=
+  bucket: beta.poorimpulse.co
+  local-dir: public
+  acl: public_read
+  on:
+    repo: poorimpulse/poorimpulse-2
+    branch: development
