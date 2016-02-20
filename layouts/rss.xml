@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd' xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
@@ -10,14 +10,33 @@
     <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     <atom:link href="{{.URL}}" rel="self" type="application/rss+xml" />
-    {{ range first 15 .Data.Pages }}
+    <itunes:author>Poor Impulse, Co.</itunes:author>
+    <itunes:subtitle>An audiobook podcast of ambition people with poor impulse control</itunes:subtitle>
+    <itunes:summary>A monthly audiobook podcast that transforms roleplaying games into an ongoing saga</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Russell Hay</itunes:name>
+      <itunes:email>russell.hay@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="http://poorimpulse.co/itunes_logo.png"/>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:category text="Comedy" />
+    {{ range first 15 (where .Data.Pages "Type" "podcast") }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-      <guid>{{ .Permalink }}</guid>
-      <description>{{ .Content | html }}</description>
+      <guid>{{ .Params.guid }}</guid>
+      <description>
+        {{ .Content | html }}
+      </description>
+      <enclosure url="{{ .Params.audio }}" length="{{ .Params.duration }}" type="audio/mpeg" />
+      <itunes:author>{{ if .Params.narrator }}{{ .Params.narrator }}{{ else }}{{ .Site.Author.name }}{{ end }}</itunes:author>
+      <itunes:explicit>{{ if .Params.explicit }}Yes{{ else }}No{{ end }}</itunes:explicit>
+      <itunes:duration>{{ .Params.duration }}</itunes:duration>
+      {{ if .Params.tags }}
+      <itunes:keywords>{{ delimit .Params.tags ", " }}</itunes:keywords>
+      {{ end }}
     </item>
     {{ end }}
   </channel>

@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<section class="seasonDetails">
+<header><h1>About the Season</h1></header>
+{{ range first 1 (where .Data.Pages "Type" "seasonSummary") }}
+	{{ .Render "summary" }}
+{{ end }}
+</section>
+{{ if gt 0 (len (where .Data.Pages "Type" "character")) }}
+<section class="characterList">
+<header><h1>Characters</h1></header>
+</section>
+{{ end }}
+<section class="episodeList">
+<header><h1>Episodes</h1></header>
+<ul>
+{{ range $post := (where .Data.Pages.Reverse "Type" "podcast") }}
+    {{ .Render "li-limited" }}
+{{ end }}
+</ul>
+</section>
+{{ partial "footer.html" . }}

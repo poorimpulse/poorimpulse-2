@@ -7,22 +7,24 @@
 </head>
 <body>
 	<nav>
-		<header>{{ partial "svgs/logo.svg" }}</header>
+		<header><a href="/">{{ partial "svgs/logo.svg" }}</a></header>
 		<ul class="nav">
 			<!-- Loop through to create nav items -->
 	      {{ range .Site.Menus.main }}
       	  <li class="nav-item">{{ .Pre }}<a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{end}}
           {{ range .Site.Data.seasons }}
+          {{ if .active }}
           <li class="nav-item">{{ .short_name }}: <a href="{{ .url | absURL }}">{{ .name }}</a></li>
+          {{ end }}
           {{end}}
 		</ul>
 		<!-- bottom nav buttons -->
 		<ul class="bottom-nav">
-		  <li class="nav-item"><a href="">{{ partial "svgs/rss.svg" }}</a></li>
-		  <li class="nav-item"><a href="">{{ partial "svgs/apple.svg" }}</a></li>
-		  <li class="nav-item"><a href="">{{ partial "svgs/cash.svg" }}</a></li>
-		  <li class="nav-item"><a href="">{{ partial "svgs/patreon.svg" }}</a></li>
+		  <li class="nav-item"><a target="_blank" href="{{ .Site.RSSLink }}">{{ partial "svgs/rss.svg" }}</a></li>
+		  <li class="nav-item"><a target="_blank" href="{{ .Site.Params.itunes_link }}">{{ partial "svgs/apple.svg" }}</a></li>
+		  <li class="nav-item"><a target="_blank" href="http://cash.me/{{ .Site.Params.cashme_name }}">{{ partial "svgs/cash.svg" }}</a></li>
+		  <li class="nav-item"><a target="_blank" href="{{ .Site.Params.patreon_link }}">{{ partial "svgs/patreon.svg" }}</a></li>
 		</ul>
 
 

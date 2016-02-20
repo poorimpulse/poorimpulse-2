@@ -1,7 +1,21 @@
 @media (min-width: 1024px)
+
+  .post
+    h1
+      flex-direction: row-reverse
+    audio
+      width: $text-width
   .site-wrap
     left: $sidebar-size
     +shadow
-    padding: 4rem 2rem
+    padding: 2rem 2rem
+    margin-right: $sidebar-size
+
+    & section
+      width: $text-width
+
+      & h1
+        font-size: 3em
+
   .nav-trigger, label[for="nav-trigger"], .site-wrap > header
     display: none
