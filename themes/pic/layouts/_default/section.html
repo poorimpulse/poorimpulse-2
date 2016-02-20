@@ -9,14 +9,8 @@
 <section class="characterList">
 <header><h1>Characters</h1></header>
 <ul>
-{{ range (where .Data.Pages "Type" "character") }}
-<li class="roundPortrait" style="width: {{ .Site.Params.circle_portrait_size}}px; height: {{ .Site.Params.circle_portrait_size}}px">
-<div class="circle"></div>
-<div class="portrait">
-<a href="{{ .URL | absURL }}"><img src="{{ .Params.portrait }}" width="{{ .Site.Params.circle_portrait_size}}px" height="{{ .Site.Params.circle_portrait_size}}px"></a>
-</div>
-<header>{{ .Title }}</header>
-</li>
+{{ range $post := (where .Data.Pages "Type" "character") }}
+	{{ .Render "li" }}
 {{ end }}
 </section>
 {{ end }}
