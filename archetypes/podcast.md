@@ -1,9 +1,11 @@
 +++
-audio = ""
+audio = "http://episodes.poorimpulse.co/"
+date = ""
 duration = ""
 filesize = ""
-seasons = [ ]
+episode_title = ""
+guid = "http://poorimpulse.co/"
+title = ""
+seasons = [ "" ]
 type = "podcast"
-guid = ""
-url = ""
 +++

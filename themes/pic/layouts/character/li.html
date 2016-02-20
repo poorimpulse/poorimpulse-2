@@ -1,7 +1,7 @@
 <li class="roundPortrait" style="width: {{ .Site.Params.circle_portrait_size}}px; height: {{ .Site.Params.circle_portrait_size}}px">
-<div class="circle"></div>
+<div class="circle"><img src="/circle.svg" class="circleStencil" /></div>
 <div class="portrait">
-<a href="{{ .Permalink | absURL }}"><img src="{{ .Params.portrait }}" width="{{ .Site.Params.circle_portrait_size}}px" height="{{ .Site.Params.circle_portrait_size}}px"></a>
+<a href="{{ .Permalink | absURL }}"><img src="{{ .Params.portrait }}" width="{{ .Site.Params.circle_portrait_size}}px"></a>
 </div>
 <header>{{ .Title }}</header>
 </li>
