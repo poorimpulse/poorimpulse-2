@@ -4,6 +4,7 @@ go:
 install: go get -v github.com/spf13/hugo
 script: hugo
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJ4EQSVXTQ7IK6DFA
   secret_access_key:
