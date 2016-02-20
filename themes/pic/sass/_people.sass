@@ -1,0 +1,22 @@
+// <li><img <aside>{{ if .url }}<a href="{{ .url }}">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}
+// {{ delimit .roles ", " ", &amp; " }}</aside>
+// </li>
+.peopleList
+  list-style: none
+  display: flex
+  flex-flow: row wrap
+
+  li
+    width: 45%
+    display: flex
+    flex-flow: row
+    justify-content: flex-start
+    align-content: flex-start
+    margin-right: 1rem
+    
+    .label
+      padding-left: 0.5rem
+      font-size: 1.5rem
+    .roles
+      display: block
+      font-size: 0.85rem

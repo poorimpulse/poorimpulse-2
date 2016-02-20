@@ -1,1 +1,5 @@
-single
+{{ partial "header.html" . }}
+<article class="page">
+<header><h1>{{ .Title }}</h1></header>
+{{ .Content }}
+{{ partial "footer.html" . }}

@@ -8,11 +8,13 @@
 <body>
 	<nav>
 		<header><a href="/">{{ partial "svgs/logo.svg" }}</a></header>
-		<ul class="nav">
+		<ul class="nav main-menu">
 			<!-- Loop through to create nav items -->
 	      {{ range .Site.Menus.main }}
       	  <li class="nav-item">{{ .Pre }}<a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{end}}
+        </ul>
+        <ul class="nav seasons">
           {{ range .Site.Data.seasons }}
           {{ if .active }}
           <li class="nav-item">{{ .short_name }}: <a href="{{ .url | absURL }}">{{ .name }}</a></li>

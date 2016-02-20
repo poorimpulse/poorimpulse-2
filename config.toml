@@ -19,3 +19,18 @@ theme = "pic"
   cashme_name = "$stainless"
   patreon_link = "http://patreon.com/poorimpulse"
   circle_portrait_size = 250
+
+[[menu.main]]
+  name = "supporters"
+  identifier = "supporters"
+  url = "/supporters"
+
+[[menu.main]]
+  name = "contributors"
+  identifier = "contributors"
+  url = "/contributors"
+
+[[menu.main]]
+  name = "about"
+  identifier = "about"
+  url = "/about"

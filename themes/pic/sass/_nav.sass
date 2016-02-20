@@ -27,7 +27,6 @@ nav
       fill: $primary1
 
   .nav
-    flex: 2 0 0
     padding: 2em 0
 
     li
@@ -37,6 +36,13 @@ nav
       text-decoration: none
       font-size: 1.5em
       text-transform: uppercase
+
+      &:hover
+        text-decoration: underline
+        color: $primary1-sub
+
+  .nav.seasons
+    flex: 2 0 0
 
   .bottom-nav
     display: flex
