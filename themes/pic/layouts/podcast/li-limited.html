@@ -1,1 +1,1 @@
-<li><aside>ep{{ if eq (len .Title) 1 }}0{{end}}{{ .Title }}</aside><a href="{{ .URL | absURL }}">{{ .Params.episode_title }}</a></li>
+<li><aside>ep{{ if eq (len .Title) 1 }}0{{end}}{{ .Title }}</aside><a href="{{ .Permalink | absURL }}">{{ .Params.episode_title }}</a></li>
