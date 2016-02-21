@@ -7,7 +7,8 @@
 - [X] Update _default/single for contributors and supporters
 - [X] Create Character details page
 - [X] make sure the itunes logo is copied into the public directory correctly
-- [ ] copy all episode content over to new design
-- [ ] Travis to deploy development to beta s3 bucket
-- [ ] s3cmd sync all audio files to episodes.poorimpulse.co
-- [ ] Travis to deploy to main s3 bucket
+- [X] copy all episode content over to new design
+- [X] Travis to deploy development to beta s3 bucket
+- [X] s3cmd sync all audio files to episodes.poorimpulse.co
+- [X] Travis to deploy to main s3 bucket
+- [ ] Shell Scripts for s3 stuff
