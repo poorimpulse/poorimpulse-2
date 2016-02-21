@@ -121,6 +121,8 @@ section header {
 .post {
   margin: 1.5rem 0;
   max-width: 50em; }
+  .post.summary h1 {
+    font-size: 1.5rem; }
   .post h1 {
     font-size: 2rem;
     display: flex;
@@ -136,7 +138,7 @@ section header {
       margin-left: 2rem; }
     .post h1 a {
       text-decoration: none; }
-  .post p {
+  .post p, .post .read-more {
     margin: 1rem 3rem;
     margin-left: 3rem; }
   .post audio {
