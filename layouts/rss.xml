@@ -30,7 +30,7 @@
       <description>
         {{ .Content | html }}
       </description>
-      <enclosure url="{{ .Params.audio }}" length="{{ .Params.duration }}" type="audio/mpeg" />
+      <enclosure url="{{ .Params.audio }}" length="{{ .Params.filesize }}" type="audio/mpeg" />
       <itunes:author>{{ if .Params.narrator }}{{ .Params.narrator }}{{ else }}{{ .Site.Author.name }}{{ end }}</itunes:author>
       <itunes:explicit>{{ if .Params.explicit }}Yes{{ else }}No{{ end }}</itunes:explicit>
       <itunes:duration>{{ .Params.duration }}</itunes:duration>
