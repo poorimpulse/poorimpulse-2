@@ -39,7 +39,8 @@ nav {
   justify-content: space-between; }
   nav ul, nav header {
     list-style: none;
-    width: 100%; }
+    width: 100%;
+    background: none; }
   nav svg .cls-1, nav svg path {
     fill: #fcfcfa; }
   nav .nav {
