@@ -6,6 +6,7 @@ $secondary-sub: lighten($secondary, 15%)
 $sidebar-size: 230px
 $hamburger-size: 10px
 $text-width: 40em
+$main-opacity: 0.5
 
 @mixin shadow
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.5)
@@ -23,6 +24,9 @@ html, body
   width: 100%
   font-size: 100%
   margin-right: 1em
+
+header
+  background: rgba($primary1, $main-opacity)
 
 // Navigation
 body
@@ -55,9 +59,12 @@ a
     font-size: 1.5rem
 
 section
+  z-index: 1
+  background: rgba($primary1, $main-opacity)
   header
     margin-top: 1.5em
     margin-bottom: 1.5em
+    background: rgba($primary1, $main-opacity)
 
 .single .post
   audio, .show-notes p
