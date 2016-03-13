@@ -4,6 +4,8 @@ head = "/se01/chadwick_head.png"
 portrait = "/se01/chadwick.png"
 type = "character"
 date = "2016-02-14T11:03:51-08:00"
+player = "Michael Falcone"
+lower = true
 +++
 Biography will go here
 
