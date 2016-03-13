@@ -16,6 +16,10 @@ name = "Christopher Matthias"
 role = "Player"
 
 [[contributors]]
+name = "Carlos Cabrera"
+role = "Player"
+
+[[contributors]]
 name = "Russell Hay"
 role = "Gamemaster"
 url = "http://russellhay.com/"
