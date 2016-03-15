@@ -272,6 +272,9 @@ aside.lower.portrait {
     .episodeContributor li .role {
       color: #dfdfca; }
 
+.roundPortrait {
+  background: #7E2114; }
+
 @media (min-width: 1024px) {
   .post h1 {
     flex-direction: row-reverse; }
