@@ -30,3 +30,39 @@ section.character
 
     .content
       flex: 2 0 0
+
+aside.portrait
+  position: fixed
+  right: 1rem
+  bottom: 1rem
+  z-index: -1
+
+  img
+    max-width: 400px
+    max-height: 400px
+
+aside.lower.portrait
+  bottom: -0.5rem
+
+.episodeContributor
+  list-style: none
+  display: flex
+  flex-flow: row wrap
+
+  li
+    margin-right: 2rem
+    margin-bottom: 1rem
+    width: 45%
+    display: flex
+    flex-flow: column-reverse
+    a
+      text-decoration: none
+
+    .name
+      font-size: 2rem
+
+    .role
+      color: $primary1-sub
+
+.roundPortrait
+  background: $secondary

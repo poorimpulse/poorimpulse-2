@@ -2,7 +2,7 @@
 <section class="page character">
 <header><h1>{{ .Title }}</h1></header>
 <article>
-<aside class="portrait"><img src="{{ .Params.portrait }}" /></aside>
+<aside class="portrait{{ if .Params.lower }} lower{{ end }}"><img src="{{ .Params.portrait }}" /></aside>
 <div class="content">
 {{ .Content }}
 </div>

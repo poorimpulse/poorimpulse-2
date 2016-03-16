@@ -1,3 +1,12 @@
 <article class="seasonSummary">
 {{ .Content }}
+{{ if .Params.contributors }}
+<ul class="episodeContributor">
+{{ range sort .Params.contributors "name" }}
+<li><span class="name">{{ if isset . "url" }}<a
+href="{{ .url }}">{{ end }}{{ .name }}{{ if isset . "url" }}</a>{{ end }}</span>
+<span class="role">{{ .role }}</span></li>
+{{ end }}
+</ul>
+{{ end }}
 </article>
