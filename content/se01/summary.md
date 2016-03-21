@@ -18,6 +18,7 @@ role = "Player"
 [[contributors]]
 name = "Carlos Cabrera"
 role = "Player"
+url = "https://www.facebook.com/carlosmercedcabrera"
 
 [[contributors]]
 name = "Russell Hay"
