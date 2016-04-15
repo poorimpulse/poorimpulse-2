@@ -235,6 +235,9 @@ section {
     justify-content: flex-start;
     align-content: flex-start;
     margin-right: 1rem; }
+    .peopleList li > .avatar {
+      display: block;
+      min-width: 80px; }
     .peopleList li .label {
       padding-left: 0.5rem;
       font-size: 1.5rem; }
