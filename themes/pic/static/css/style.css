@@ -166,6 +166,13 @@ section {
     margin: 1.5em 0;
     line-height: 1.5em; }
 
+.page h2 {
+  font-size: 1.5rem;
+  margin-top: 2em;
+  color: #7E2114; }
+  .page h2 + p {
+    margin-top: 0; }
+
 .episodeList ul {
   list-style: none; }
   .episodeList ul li {
@@ -228,6 +235,9 @@ section {
     justify-content: flex-start;
     align-content: flex-start;
     margin-right: 1rem; }
+    .peopleList li > .avatar {
+      display: block;
+      min-width: 80px; }
     .peopleList li .label {
       padding-left: 0.5rem;
       font-size: 1.5rem; }

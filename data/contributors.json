@@ -1,5 +1,46 @@
 [
   {
+    "name": "Carlos Cabrerra",
+    "roles": [ "Player" ],
+    "gravatar": "",
+    "url": "https://www.facebook.com/carlosmercedcabrera"
+  },
+  {
+    "name": "Chris Matthias",
+    "roles": [ "Player" ],
+    "gravatar": "25c2fedb8104ad976fab0c5263ca3532"
+  },
+  {
+    "name": "Collin Lazelle",
+    "roles": [ "Player" ],
+    "gravatar": "45cf5f00ee2253e39a5787254dc79d6e"
+  },
+  {
+    "name": "Cord Carney",
+    "roles": [ "Player" ],
+    "gravatar": "98486a8922c2f04f5c56906ab83c3fa2"
+  },
+  {
+    "name": "Craig Bettles",
+    "roles": [ "Player" ],
+    "gravatar": "d3d9446802a44259755d38e6d163e820"
+  },
+  {
+    "name": "Gregory Potter",
+    "roles": [ "Player" ],
+    "gravatar": "a87ff679a2f3e71d9181a67b7542122c"
+  },
+  {
+    "name": "Jonathan",
+    "roles": [ "Player" ],
+    "gravatar": "c9f0f895fb98ab9159f51fd0297e236d"
+  },
+  {
+    "name": "Mike Falcone",
+    "roles": [ "Player" ],
+    "gravatar": "e4da3b7fbbce2345d7772b0674a318d5"
+  },
+  {
   	"name": "Russell Hay",
   	"roles": [
   	  "Narrator",
@@ -9,35 +50,6 @@
   	],
   	"url": "http://russellhay.com",
   	"gravatar": "42dea51005f1cf878cef271c8dffdae6"
-  },
-  {
-  	"name": "Gregory Potter",
-  	"roles": [ "Player" ],
-  	"gravatar": "a87ff679a2f3e71d9181a67b7542122c"
-  },
-  {
-  	"name": "Mike Falcone",
-  	"roles": [ "Player" ],
-  	"gravatar": "e4da3b7fbbce2345d7772b0674a318d5"
-  },
-  {
-  	"name": "Jonathan",
-  	"roles": [ "Player" ],
-  	"gravatar": "c9f0f895fb98ab9159f51fd0297e236d"
-  },
-  {
-  	"name": "Collin Lazelle",
-  	"roles": [ "Player" ],
-  	"gravatar": "45cf5f00ee2253e39a5787254dc79d6e"
-  },
-  {
-  	"name": "Craig Bettles",
-  	"roles": [ "Player" ],
-  	"gravatar": "d3d9446802a44259755d38e6d163e820"
-  },
-  {
-  	"name": "Cord Carney",
-  	"roles": [ "Player" ],
-  	"gravatar": "98486a8922c2f04f5c56906ab83c3fa2"
   }
+
 ]

@@ -1,4 +1,4 @@
 name = "SuperSpy"
 short_name = "se01"
 url = "/se01/"
-active = false
+active = true
