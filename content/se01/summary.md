@@ -24,6 +24,11 @@ url = "https://www.facebook.com/carlosmercedcabrera"
 name = "Russell Hay"
 role = "Gamemaster"
 url = "http://russellhay.com/"
+
+[[contributors]]
+name = "Crystal Jack"
+role = "Theme Music"
+url = "http://soundcloud.com/crystaljack"
 +++
 The world is in turmoil.  The United States has lost its position as a superpower,
 and chaos in Russia has lead to polarized political figures gaining control of the
