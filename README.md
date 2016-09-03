@@ -11,4 +11,4 @@
 - [X] Travis to deploy development to beta s3 bucket
 - [X] s3cmd sync all audio files to episodes.poorimpulse.co
 - [X] Travis to deploy to main s3 bucket
-- [ ] Shell Scripts for s3 stuff
+- [X] Shell Scripts for s3 stuff
