@@ -2,3 +2,5 @@ public
 .sass-cache
 .idea
 .DS_Store
+deploy.rsa
+themes/pic3/static/css

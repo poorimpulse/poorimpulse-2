@@ -15,26 +15,23 @@ You can rate and review the podcast on
 or recommend an episode to a friend on [overcast](https://overcast.fm/itunes1050183916/poor-impulse-control).
 Every rating or review helps more people discovery it.
 
-## One-Time Donations
-You can use
-[cash.me/$stainless](http://cash.me/$stainless) to send a donation.  One
-time donations of $10 or more will be mentioned in a future episode
-of the podcast.  Just be sure to include an email address so that
-I can contact you to make sure I pronounce your name correctly.
+## On-Going Support
+You can do that on a monthly basis on Patreon: 
+[patreon.com/poorimpulse](http://patreon.com/poorimpulse)
 
-## Per-Episode Donations
-You can use
-[patreon.com/poorimpulse](http://patreon.com/poorimpulse).  If you
-pledge $5 or more, you will be listed on the [supporters](/supporters)
-page for as long as your pledge is active.
+Monthly support provides you with the following benefits:
 
-## Love You Forever
-Want to be super crazy and awesome because you love us that much? I have
-an [amazon wishlist](http://amzn.com/w/FZ3OVDNSVTCJ) with all of our future
-equipment wishes.  I haven't decided what the reward for buying something
-off of the wishlist will be, maybe my first born child, I don't know.
+Access patron-only audio content, a thank you from one of the characters on the
+podcast, your name on our [supporters](/supporters) page, and a private, patron-only slack invite where you can access the
+players directly.  All of this for only $1 per month.
 
-## Transparency
-And lastly, because I believe in transparency, You can see all money
-involved in the podcast on the
-[spending tracking worksheet](https://docs.google.com/spreadsheets/d/1UZgl_x8cHSn2ghNRWDcGoMmyUcPpZUJMwddh7tqn5PQ/edit?usp=sharing)
+The various tiers also offer additional benefits.
+
+*Seelie Tier* - $1 per month, everything listed above.
+
+*Unseelie Tier* - $5 per month, everything listed above plus compel one aspect 
+of one of the characters (PC or NPC).
+
+*Wild Fae* - $7 per month, everything listed above plus a link on your supporters entry to a social media account of your choice.
+
+*True Fae* - $10 per month, everything listed above plus a surprise enameled pin mailed to you.

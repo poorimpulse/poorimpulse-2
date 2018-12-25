@@ -1,8 +1,7 @@
-baseurl = "http://poorimpulse.co"
+baseurl = "https://poorimpulse.co"
 languageCode = "en-us"
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License"
-title = "Poor Impulse Control"
-theme = "pic"
+title = "Poor Impulse"
+theme = "pic3"
 
 [permalinks]
   podcast = ":section/:slug"
@@ -15,15 +14,14 @@ theme = "pic"
   name = "Russell Hay"
 
 [params]
-  itunes_link = "https://itunes.apple.com/us/podcast/poor-impulse-control/id1050183916?mt=2"
-  cashme_name = "$stainless"
+  itunes_link = "https://itunes.apple.com/us/podcast/poor-impulse"
   patreon_link = "http://patreon.com/poorimpulse"
   circle_portrait_size = 250
 
-[[menu.main]]
-  name = "supporters"
-  identifier = "supporters"
-  url = "/supporters"
+# [[menu.main]]
+#   name = "supporters"
+#   identifier = "supporters"
+#   url = "/supporters"
 
 [[menu.main]]
   name = "contributors"
