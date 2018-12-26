@@ -18,6 +18,20 @@ theme = "pic3"
   patreon_link = "http://patreon.com/poorimpulse"
   circle_portrait_size = 250
 
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["txt"]
+
+[outputFormats]
+  [outputFormats.TEXT]
+    isPlainText = true
+    mediaType = "text/plain"
+    baseName = "transcript"
+
+[outputs]
+  page = [ "HTML", "TEXT" ]
+  section = ["HTML", "TEXT" ]
+
 # [[menu.main]]
 #   name = "supporters"
 #   identifier = "supporters"
@@ -37,3 +51,9 @@ theme = "pic3"
   name = "about"
   identifier = "about"
   url = "/about"
+
+[[menu.main]]
+  name = "🏠"
+  identifier = "home"
+  url = "/"
+  weight = 9999

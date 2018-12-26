@@ -1,0 +1,35 @@
+html, body
+    min-height: 100%
+    
+#container
+    display: grid
+    max-width: 960px
+    margin: 1em auto
+    grid-row-gap: 1em
+    grid-template-rows: 1 auto 1
+
+#header
+    header
+        margin-bottom: 1em
+        display: grid
+        grid-template-columns: 150px auto
+        grid-template-rows: 1 auto
+        grid-column-gap: 1em
+        align-items: flex-start
+
+        & > img
+            align-self: center
+            grid-row: 1 / span 2
+            
+
+    .menu
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+        a
+            display: block
+            padding: 0 0.5em
+            margin-right: 0.5em
+
+audio
+    padding: 0.5em 0

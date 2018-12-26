@@ -1,0 +1,13 @@
+<div id="header">
+    <header>
+        <img src="//placehold.it/150x150" alt="Poor Impulse Logo" />
+        <h1>Poor Impulse</h1>
+        <h2>a real-play podcast featuring Fate Accelerated Edition</h2>
+    </header>
+    <div class="menu">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+</div>

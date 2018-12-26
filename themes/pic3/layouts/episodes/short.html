@@ -1,0 +1,14 @@
+<article itemscope itemtype="http://schema.org/Episode">
+<link itemprop="partOfSeason" href="//poorimpulse.co/seasons/{{ .Params.season }}" />
+<header><span itemprop="episodeNumber">{{ .Params.episode }}</span>: {{ .Title }}</header>
+<div itemprop="audio">
+    <audio controls preload="none" itemtype="Audio">
+        <!-- <meta itemprop="contentURL" content="{{ .Params.audio }}" /> -->
+        <source itemprop="contentURL" src="{{ .Params.audio }}" type="audio/mp3">
+    </audio>
+    {{ with .OutputFormats.Get "TEXT" -}}
+        <link itemprop="transcript" href="{{ .Permalink }}" />
+    {{- end }}
+</div>
+<div itemprop="about">{{ .Summary }}</div>
+</article>
