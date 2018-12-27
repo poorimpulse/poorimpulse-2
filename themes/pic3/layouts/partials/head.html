@@ -4,6 +4,5 @@
 <link rel="stylesheet" href="/css/style.css" type="text/css">
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-{{ template "_internal/google_analytics_async.html" . }}
 <meta name="google-site-verification" content="txNFzfbE05qtAOd2QO7hMJuGmOfK9FiMKn0glTUdy5s" />
 {{ end -}}
