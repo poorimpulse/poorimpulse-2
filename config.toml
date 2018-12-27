@@ -2,9 +2,11 @@ baseurl = "https://poorimpulse.co"
 languageCode = "en-us"
 title = "Poor Impulse"
 theme = "pic3"
+googleAnalytics = "UA-27993941-6"
+enableRobotsTXT = true
 
 [permalinks]
-  podcast = ":section/:slug"
+  episodes = ":slug"
 
 [taxonomies]
   season = "seasons"
