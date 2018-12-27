@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://poorimpulse.co/sitemap.xml
