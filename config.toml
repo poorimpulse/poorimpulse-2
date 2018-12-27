@@ -47,14 +47,28 @@ theme = "pic3"
   name = "donate"
   identifier = "donate"
   url = "/donate"
+  weight = 10
 
 [[menu.main]]
   name = "about"
   identifier = "about"
   url = "/about"
+  weight = 1
 
 [[menu.main]]
   name = "🏠"
   identifier = "home"
   url = "/"
-  weight = 9999
+  weight = -9999
+
+[[menu.main]]
+  name = "📡"
+  identifier = "subscribe"
+  url = "/index.xml"
+  weight = 100
+
+[[menu.main]]
+  name = "🍎"
+  identifier = "itunes"
+  url = "/itunes"
+  weight = 100
