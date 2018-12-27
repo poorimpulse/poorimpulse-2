@@ -1,4 +1,9 @@
 <article itemscope itemtype="http://schema.org/Episode">
+<meta itemprop="accessMode" content="auditory" />
+<meta itemprop="datePublished" content="{{ .PublishDate.Format "2006-01-02" }}" />
+{{- if .Params.recordedOn -}}
+<meta itemprop="dateCreated" content="{{ .Params.recordedOn | dateFormat "2006-01-02" }}" />
+{{- end -}}
 <link itemprop="partOfSeason" href="//poorimpulse.co/seasons/{{ .Params.season }}" />
 <header><span itemprop="episodeNumber">{{ .Params.episode }}</span>: {{ .Title }}</header>
 <div itemprop="audio">
@@ -6,9 +11,9 @@
         <!-- <meta itemprop="contentURL" content="{{ .Params.audio }}" /> -->
         <source itemprop="contentURL" src="{{ .Params.audio }}" type="audio/mp3">
     </audio>
-    {{ with .OutputFormats.Get "TEXT" -}}
+    {{ with .OutputFormats.Get "text" -}}
         <link itemprop="transcript" href="{{ .Permalink }}" />
-    {{- end }}
+    {{- end -}}
 </div>
 <div itemprop="about">{{ .Summary }}</div>
 </article>

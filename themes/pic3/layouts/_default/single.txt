@@ -1,4 +1,0 @@
-{{ $.Site.Title }} Transcript of {{ .Params.episode }}
-Transcribe by {{ .Params.transcriber }}
-
-{{ .Content }}

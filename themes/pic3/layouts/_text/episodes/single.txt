@@ -1,0 +1,4 @@
+{{ $.Site.Title }} Transcript of {{ .Params.episode }}
+Transcribed by {{ echoParam .Params "transcriber" }}
+
+{{ .Plain }}

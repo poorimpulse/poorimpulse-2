@@ -29,18 +29,19 @@ theme = "pic3"
     baseName = "transcript"
 
 [outputs]
+  home = [ "HTML", "AMP", "RSS"]
   page = [ "HTML", "TEXT" ]
-  section = ["HTML", "TEXT" ]
+  section = ["HTML" ]
 
 # [[menu.main]]
 #   name = "supporters"
 #   identifier = "supporters"
 #   url = "/supporters"
 
-[[menu.main]]
-  name = "contributors"
-  identifier = "contributors"
-  url = "/contributors"
+# [[menu.main]]
+#   name = "contributors"
+#   identifier = "contributors"
+#   url = "/contributors"
 
 [[menu.main]]
   name = "donate"

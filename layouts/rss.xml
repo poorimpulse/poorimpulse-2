@@ -20,7 +20,7 @@
     <itunes:image href="http://poorimpulse.co/itunes_logo.png"/>
     <itunes:explicit>No</itunes:explicit>
     <itunes:category text="Comedy" />
-    {{ range first 15 (where .Data.Pages "Type" "podcast") }}
+    {{ range first 15 (where .Data.Pages "Section" "episodes") }}
     <item>
       <title>{{ .Title }} - {{ .Params.episode_title }}</title>
       <link>{{ .Permalink }}</link>
