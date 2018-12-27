@@ -1,8 +1,13 @@
+// Setup colors
+$metalgray: #2b2d42
+$gray: #8d99ae
+$white: #edf2f4
+$red: #ef233c
+$candyred: #d90429
+
 @import "reset"
 @import "layout"
 @import "typography"
-
-// Setup colors
 
 // Random Colors
 $s-min: 20
@@ -11,3 +16,10 @@ $l-min: 30
 $l-max: 90
 
 $rndclr: hsl(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min))
+
+body
+    background-color: $metalgray
+    color: $white
+
+a, a:visited
+    color: $red

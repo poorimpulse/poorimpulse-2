@@ -1,6 +1,7 @@
 <article itemscope itemtype="http://schema.org/Episode">
 <meta itemprop="accessMode" content="auditory" />
 <meta itemprop="datePublished" content="{{ .PublishDate.Format "2006-01-02" }}" />
+<meta itemprop="isAccessibleForFree" content="true" />
 {{- if .Params.recordedOn -}}
 <meta itemprop="dateCreated" content="{{ .Params.recordedOn | dateFormat "2006-01-02" }}" />
 {{- end -}}
