@@ -1,6 +1,12 @@
 {{ define "main" }}
-{{ range where .Pages "Section" "episodes" }}
-{{ .Render "short" }}
-<!-- {{ printf "%#v" . }} -->
+{{ range (where .Pages "Section" "episodes").GroupByParam "season" }}
+<section itemscope itemtype="http://schema.org/CreativeWorkSeason">
+    <meta itemprop="contentRating" content="ExplicitLanguage" />
+    <meta itemprop="encodingFormat" content="audio/mpeg3" />
+    <header><h1>Season <span itemprop="seasonNumber">{{ .Key }}</span></h1></header>
+    {{ range .Pages -}}
+        {{ .Render "short" }}
+    {{- end }}
+</section>
 {{ end }}
 {{ end }}
