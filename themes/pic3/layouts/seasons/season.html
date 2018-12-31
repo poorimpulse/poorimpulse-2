@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section itemscope itemtype="http://schema.org/CreativeWorkSeason">
+    <meta itemprop="contentRating" content="ExplicitLanguage" />
+    <meta itemprop="encodingFormat" content="audio/mpeg3" />
+    <header><h1>Season <span itemprop="seasonNumber">{{ .LinkTitle }}</span></h1></header>
+    <div class="description" itemprop="description">
+        {{ .Content }}
+        {{ printf "%#v" . }}
+    </div>
+    {{ range .Pages -}}
+        {{ .Render "short" }}
+    {{- end }}
+</section>
+{{ end }}

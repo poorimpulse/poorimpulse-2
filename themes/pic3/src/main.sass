@@ -4,7 +4,9 @@ $gray: #8d99ae
 $white: #edf2f4
 $red: #ef233c
 $candyred: #d90429
+$black: #1c1416
 
+@import "font"
 @import "reset"
 @import "layout"
 @import "typography"
@@ -18,8 +20,14 @@ $l-max: 90
 $rndclr: hsl(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min))
 
 body
-    background-color: $metalgray
+    background-attachment: fixed
+    background-image: url(/gradient.png)
+    background-size: cover
+    background-color: $black
     color: $white
 
 a, a:visited
     color: $red
+
+.logo
+    border: 1px solid $red

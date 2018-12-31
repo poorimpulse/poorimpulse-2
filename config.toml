@@ -5,6 +5,11 @@ theme = "pic3"
 googleAnalytics = "UA-27993941-6"
 enableRobotsTXT = true
 
+[privacy]
+  [privacy.googleAnalytics]
+  useSessionStorage = true
+
+
 [permalinks]
   episodes = ":slug"
 

@@ -1,20 +1,20 @@
 <article itemscope itemtype="http://schema.org/Episode">
 <meta itemprop="accessMode" content="auditory" />
 <meta itemprop="datePublished" content="{{ .PublishDate.Format "2006-01-02" }}" />
+<meta itemprop="isFamilyFriendly" content="false" />
 <meta itemprop="isAccessibleForFree" content="true" />
 {{- if .Params.recordedOn -}}
 <meta itemprop="dateCreated" content="{{ .Params.recordedOn | dateFormat "2006-01-02" }}" />
 {{- end -}}
-<link itemprop="partOfSeason" href="//poorimpulse.co/seasons/{{ .Params.season }}" />
-<header><span itemprop="episodeNumber">{{ .Params.episode }}</span>: {{ .Title }}</header>
-<div itemprop="audio">
+<link itemprop="partOfSeason" href="/seasons/{{ index (first 1 .Params.seasons) 0 }}" />
+<header><span itemprop="episodeNumber">{{ .Params.episode }}</span>: <span itemprop="headline">{{ .Title }}</span></header>
+<div itemprop="audio" itemscope itemtype="http://schema.org/AudioObject">
     <audio controls preload="none" itemtype="Audio">
-        <!-- <meta itemprop="contentURL" content="{{ .Params.audio }}" /> -->
-        <source itemprop="contentURL" src="{{ .Params.audio }}" type="audio/mp3">
+        <source itemprop="contentUrl" src="{{ .Params.audio }}" type="audio/mp3">
     </audio>
     {{ with .OutputFormats.Get "text" -}}
         <link itemprop="transcript" href="{{ .Permalink }}" />
     {{- end -}}
 </div>
-<div itemprop="about">{{ .Summary }}</div>
+<div itemprop="description">{{ .Summary }}</div>
 </article>
