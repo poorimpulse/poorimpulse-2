@@ -6,7 +6,11 @@
     <header><h1>Season <span itemprop="seasonNumber">{{ .Key }}</span></h1></header>
     {{ range .Pages -}}
         {{ .Render "short" }}
+        {{- else -}}
+        <article><header><h1>No episodes published for this Season</h1></header></article>
     {{- end }}
 </section>
+{{- else -}}
+<section><header><h1>No episodes published yet, coming soon!</h1></header></section>
 {{ end }}
 {{ end }}
